@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Automata Compiler</title>
+
+    <link rel="stylesheet"
+        href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">G4 Compiler</a>
+        <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="manual.html">Manual</a>
+        <a href="about.html">About</a>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="container controls">
+            <div class="row-fluid">
+                <div class="span6 column">
+                    <h3> Choose RegEx </h3>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+
+                            <p>
+                            <div class="control-group">
+                                <input id="regex" type="text" class="input-block-level" placeholder="Enter RegEx here"
+                                    spellcheck="false">
+                            </div>
+                            </p>
+
+                            <p>
+                                <div class="control-group" style="display:none;">
+                                    <label for="automatonType"></label>
+                                    <input id="automatonType" value="DFA" readonly>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="fsmError" class="text-error">
+                    </p>
+
+                    <p>
+                        <button id="createAutomaton" class="btn" disabled>Show DFA</button>
+                    </p>
+
+                </div>
+
+                <div class="span6 column">
+                    <h3> Input a String </h3>
+                    <p>
+                    <div class="control-group">
+                        <input id="inputString" type="text" class="input-block-level" placeholder="e.g. 10010101001"
+                            disabled spellcheck="false">
+                    </div>
+                    </p>
+                    <p>
+                        <button id="startStop" class="btn" disabled>
+                            Start
+                        </button>
+                    </p>
+                    <p id="inputError" class="text-error">
+                    </p>
+                </div>
+            </div>
+
+            <hr />
+        </div>
+
+        <div class="container graph">
+            <h2 id="result" style="text-align: center;"><h2>
+            <h3> DFA </h3>
+
+            <div id="automatonGraph"> </div>
+        </div>
+        <div class="container controls">
+            <hr />
+            <div class="row-fluid">
+            <div class="span6 column">
+
+            
+            
+
+            <div class="sub">
+				<h3>No.1: Regular Expresion</a></h3>
+				<h4 style="font-size: 16px;"><ul>(bab+bbb)a*b*(a*+b*)(ba)*(aba)(bab+aba)*bb(a+b)*(bab+aba)(a+b)*</ul></h4>
+
+				</div>
+
+			    <div class="sub">
+                <h3>Context Free Grammar</h3>
+
+				<ul>
+                    <br>S → CABDEFHIJGJ</br>
+                    <br>A → aA | Λ </br>
+                    <br>B → bB | Λ </br>
+                    <br>C → bab | bbb </br>
+                    <br>D → A | B </br>
+                    <br>E → baE | Λ </br>
+                    <br>F → aba </br>
+                    <br>G → bab | aba </br>
+                    <br>H → GH | Λ </br>
+                    <br>I → bb </br>
+                    <br>J → aJ | bJ | Λ </br>
+				</ul>
+			    </div>     
+            </div>
+            <div class="span6 column">
+
+            
+            
+
+                <div class="sub">
+                    <h3 style=>No.2: Regular Expression</a></h3>
+                    <h4 style="font-size: 16px;"><ul>(1+0)*1*0*(101+01+000)(1+0)*(101+00)*(111+00+101)(1+0)*</ul></h4>
+    
+                    </div>
+    
+                    <div class="sub">
+                        <h3>Context Free Grammar</h3>
+                    <ul>
+                        <br>S → ABCDAEFA | DAEFA </br>
+                        <br>A → 1A | 0A | Λ </br>
+                        <br>B → 1B | Λ </br>
+                        <br>C → 0C | Λ </br>
+                        <br>D → 101 | 01 | 000 </br>
+                        <br>E → 101E | 00E | Λ </br>  
+                        <br>F → 111 | 00 | 101 </br> 
+                        <br><br><br><br><br><br><br><br>
+                    </ul>
+                    </div>     
+                </div>
+        </div>
+        <div class="container controls">
+            <div class="sub">
+            <h3>No 1. PDA</h3>
+            <img src="./PDA1.jpg" alt="Image 1 description" style="max-width: 100%; height: auto; text-align:center">
+            </div>
+            <div class="sub">
+            <h3>No 2. PDA</h3>
+            <img src="./PDA2.png" alt="Image 1 description" style="max-width: 100%; height: auto; text-align:center">
+            </div>
+        </div>
+
+        </div>
+
+
+
+    <div class="footer">
+        <p>
+            This <strong>DFA compiler</strong> was made in accordance to the Summative Assessment required in the course subject <strong>S-CSPC327</strong>.
+        </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <script src="viz.js"></script>
+    <script src="noam.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>G4 Compiler</title>
+
+    <link rel="stylesheet"
+        href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">G4 Compiler</a>
+        <div class="header-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="manual.html">Manual</a>
+        <a href="about.html">About</a>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="container controls">
+            <div class="sub">
+            <h2 style="text-align: center;">Welcome!</h2>
+            <p style="font-size: 16px; text-align: center;">Meet the G4 Compiler, a tool for diving into the world
+                of Automata!. Pick between two regex options,
+                each with its own DFA, and get hands-on with simulating their
+                transitions. But it doesn't stop there! You also get the
+                corresponding context-free grammars (CFG) and pushdown
+                automata (PDA) for a deeper dive into computational theory.</p>
+            </div>
+            <div class="sub1">
+            <h2 style="text-align: center;">Instructions</h2>
+            <p style="font-size: 16px; text-align: center;">To get started on using G4 Compiler, here are the instructions
+                that can help make your experience with the compiler a little bit easier.
+            </p>
+            <br>
+            <hr>
+            <h4 style="text-align: center;">Step 1:</h4>
+            <p style="font-size: 16px; text-align: center;">Choose from the 2 RegEx available in the dropdown menu.
+            </p>
+            <img src="./step1.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <hr>
+            <h4 style="text-align: center;">Step 2:</h4>
+            <p style="font-size: 16px; text-align: center;">Click the "Show DFA" button to generate the Definite Finite Automata diagram.
+            </p>
+            <img src="./step2.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <hr>
+            <h4 style="text-align: center;">Step 3:</h4>
+            <p style="font-size: 16px; text-align: center;">Input a string so that you can start
+                observing how the transitions will occur in the diagram.
+            </p>
+            <img src="./step3.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <hr>
+            <h4 style="text-align: center;">Step 4:</h4>
+            <p style="font-size: 16px; text-align: center;">Press the "Start" button to begin the simulation!
+            </p>
+            <img src="./step4.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <hr>
+            <h4 style="text-align: center;">Step 5:</h4>
+            <p style="font-size: 16px; text-align: center;">Watch the compiler show how the transitions work!.
+            </p>
+            <img src="./step5.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <hr>
+            <h4 style="text-align: center;">Step 6:</h4>
+            <p style="font-size: 16px; text-align: center;">In the end, it will show you if your string is "Valid" or "Invalid".
+            </p>
+            <img src="./step6.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <hr>
+            <h4 style="text-align: center;">Step 7:</h4>
+            <p style="font-size: 16px; text-align: center;">Check out the bottom part of the page to see the 2 RegEx's corresponding CFG and PDA!
+            </p>
+            <img src="./step7.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <img src="./PDA1.jpg" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            <img src="./PDA2.png" alt="Image 1 description" style="max-width: 50%; height: auto; display:block; margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <script src="viz.js"></script>
+    <script src="noam.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
